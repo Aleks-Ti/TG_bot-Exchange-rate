@@ -1,0 +1,6 @@
+# ignor
+.env
+/venv
+.idea
+program.log
+requests.http

@@ -2,23 +2,22 @@
 
 ## Application Functions
 
-Проект представляет собой бота для мессенджера Telegram,
-разработанного с использованием фреймворка aiogram. Бот имеет следующие функции:
+The project is a bot for the Telegram messenger,
+developed using the aiogram framework. The bot has the following functions:
 
-Присылать свежую информацию о курсе биткоина. Бот будет регулярно обновлять информацию,
-если потребуеться, о курсе биткоина и отправлять ее пользователям.
+Send the latest information about bitcoin exchange rate. The bot will update the information regularly,
+if necessary, about bitcoin exchange rate and send it to users.
 
-Предоставлять курсы национальных валют, таких как доллар и евро.
-Бот имеет возможность получать актуальные курсы валют и отправлять их пользователям по запросу.
+Provide rates of national currencies such as dollar and euro.
+The bot has the ability to get up-to-date exchange rates and send them to users upon request.
 
 ## Others
 
-Бот разработан с использованием фреймворка aiogram, который облегчает создание и управление ботами для Telegram.
-Он предоставляет удобные инструменты для работы с API Telegram и обработки входящих сообщений.
+The bot is developed using the aiogram framework, which makes it easy to create and manage bots for Telegram.
+It provides convenient tools for working with Telegram API and processing incoming messages.
 
-Для запуска бота необходимо установить зависимости, указанные в файле requirements.txt, и настроить токен Telegram API.
-Подробные инструкции по установке и настройке читаем ниже.
-
+To run the bot, you need to install the dependencies specified in the requirements.txt file and configure the Telegram API token.
+Detailed instructions on installation and configuration can be found below.
 
 ## Installation
 
@@ -74,10 +73,10 @@ python main.py
 
 ### Additionally
 
-Так же можно прозвонить используемые api в проекте вручную,
-и посмотреть структуру json ответа используемую в проекте:
+You can also call the api used in the project manually,
+and see the json response structure used in the project:
 
-Откройте файл requests.http и с помощью комбинаций клавишь ctrl + LMB
+Open the requests.http file and use the ctrl + LMB key combinations
 
 ### License
 

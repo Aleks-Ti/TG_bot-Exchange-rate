@@ -45,7 +45,7 @@ def get_api_answer_bit():
             'https://api.coindesk.com/v1/bpi/currentprice.json'
         ).json()
     except Exception:
-        logging.exception('ЖОПА')
+        logging.exception('Api ЦБ не отвечает')
 
 
 def get_api_answer_cb():
@@ -61,7 +61,7 @@ def get_api_answer_cb():
             'https://www.cbr-xml-daily.ru/daily_json.js'
         ).json()
     except Exception:
-        logging.exception('ЖОПА в ЦБ')
+        logging.exception('Api ЦБ не отвечает')
 
 
 def parse_data_cb(data: dict) -> str:
@@ -93,7 +93,7 @@ def parse_data_cb(data: dict) -> str:
         )
         return message
     logging.error('Изменился json получаемый от API.')
-    raise Exception('Жопа ЦБ')
+    raise Exception('pars json CB: ERROR')
 
 
 def parse_data_bt(data: dict) -> str:
@@ -110,7 +110,7 @@ def parse_data_bt(data: dict) -> str:
         )
         return message
     except Exception:
-        logging.exception('Че-то с распарсом json Bitcoin')
+        logging.exception('pars json Bitcoin: ERROR')
 
 
 @dp.message_handler(commands=['kurs'])
